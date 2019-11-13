@@ -33,10 +33,10 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
 ## Technical Challenges and research that you anticipated
 
     * Postman was used to test GET requests from the two API's
+    * 2 days to create a "Minimum Viable Product (MVP) Application"
   
 ## Challenges that were unexpected
 
-    * 2 days to create a "Minimum Viable Product (MVP) Application"
     * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
     * I could not npm install anything. This was unexpected. In the future I would like to understand why Expo could not handle this
        * MongoAtlas
@@ -46,7 +46,7 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
 
 ![](second.gif)
   
-## How does the app work (behind the scenes)?
+## How does the app work? (behind the scenes)
 
     * Images are generated from two separate API's
     * "Good" images are stored in an array and rendered in the ScrollView
