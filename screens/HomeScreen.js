@@ -136,24 +136,28 @@ export default class HomeScreen extends React.Component {
             </Text>
           </TouchableOpacity>
         </View> */}
-
+        <View style={{marginRight:90, marginLeft:90, }}>
         <Button 
           color='#33cc33'
-          style={{marginBottom:20}}
           title='GOOD CAT'
+          type="outline"
           onPress={()=>this.goodCatButtonPress()}
         />
+        </View>
         
         <Image 
           style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
           source = {{uri:`${this.state.dataSource}`}}
         />
 
+        <View style={{marginRight:90, marginLeft:90}}>
         <Button 
           color="#ff0000"
           title='bad cat'
+          raised='true'
           onPress={()=>this.badCatButtonPress()}
         />
+        </View>
 
         <Text style={{fontSize:60}}>Saved Catz:</Text>
         <FavoriteCats favoriteCats={this.state.favoriteArray}/>
@@ -235,7 +239,7 @@ const styles = StyleSheet.create({
     color: '#ff0066',
   },
   contentContainer: {
-    paddingTop: 30,
+    paddingTop: 20,
   },
   welcomeContainer: {
     alignItems: 'center',
@@ -265,10 +269,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   getStartedText: {
-    fontSize: 17,
+    fontFamily: 'notoserif',
+    fontSize: 20,
     color: 'rgb(0, 0, 102)',
     lineHeight: 24,
     textAlign: 'center',
+    fontWeight: 'bold',
   },
   tabBarInfoContainer: {
     position: 'absolute',

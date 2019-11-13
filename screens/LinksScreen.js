@@ -81,23 +81,28 @@ export default class LinksScreen extends React.Component {
         Click to Rate a Doggo
       </Text>
 
+      <View style={{marginRight:90, marginLeft:90}}>
       <Button 
         color='#33cc33'
         style={{marginBottom:20}}
         title='GOOD DOG'
         onPress={()=>this.goodDogButtonPress()}
       />
+      </View>
         
       <Image 
           style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
           source = {{uri:`${this.state.dataSource}`}}
       />
 
+      <View style={{marginRight:90, marginLeft:90}}>
       <Button 
         color="#ff0000"
         title='FETCH NEW DOG'
         onPress={()=>this.badDogButtonPress()}
       />
+      </View>
+
       <Text style={{fontSize:60}}>Favorites:</Text>
       <FavoriteDogs favoriteDogs={this.state.favoriteArray}/>
 
@@ -117,9 +122,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffcc',
   },
   getStartedText: {
-    fontSize: 17,
+    fontSize: 20,
     color: 'rgb(0, 0, 102)',
     lineHeight: 24,
     textAlign: 'center',
+    fontWeight: 'bold'
   },
 });

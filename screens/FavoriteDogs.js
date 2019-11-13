@@ -29,8 +29,11 @@ export default class FavoriteDogs extends React.Component {
                 key={image}
                 style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
                 source={{uri:`${image}`}}
-            />
+          />
         ))}
+        <Text style={{textAlign:'center'}}>
+          Make sure you give lots of pets
+        </Text>
       </View>
     )
   }
