@@ -101,7 +101,7 @@ export default class HomeScreen extends React.Component {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
-        <View style={styles.welcomeContainer}>
+        {/* <View style={styles.welcomeContainer}>
           <Image
             source={
               __DEV__
@@ -110,9 +110,9 @@ export default class HomeScreen extends React.Component {
             }
             style={styles.welcomeImage}
           />
-        </View>
+        </View> */}
 
-        <View style={styles.getStartedContainer}>
+        {/* <View style={styles.getStartedContainer}>
           <DevelopmentModeNotice />
 
           <Text style={styles.getStartedText}>Get started by opening</Text>
@@ -125,15 +125,15 @@ export default class HomeScreen extends React.Component {
           <Text style={styles.getStartedText}>
             Change this text and your app will automatically reload.
           </Text>
-        </View>
+        </View> */}
 
-        <View style={styles.helpContainer}>
+        {/* <View style={styles.helpContainer}>
           <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
             <Text style={styles.helpLinkText}>
               Help, it didn’t automatically reload!
             </Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
 
         <Button 
           style={{marginBottom:20}}
@@ -147,10 +147,17 @@ export default class HomeScreen extends React.Component {
         />
 
         <Button 
-          style={{marginBottom:20}}
+          color="#ff0000"
+          // style={{color:"#1E6738"}}
           title='bad cat'
           onPress={()=>this.badCatButtonPress()}
         />
+        <TouchableOpacity
+          style={styles.loginScreenButton}
+          onPress={()=>this.goodCatButtonPress()}
+          underlayColor='#fff'>
+          <Text style={styles.loginText}>Hi Rob</Text>
+        </TouchableOpacity>
 
         <Text style={{fontSize:60}}>Favorites:</Text>
         <FavoriteCats favoriteCats={this.state.favoriteArray}/>
@@ -188,10 +195,11 @@ function DevelopmentModeNotice() {
     );
 
     return (
-      <Text style={styles.developmentModeText}>
-        Development mode is enabled: your app will be slower but you can use
-        useful development tools. {learnMoreButton}
-      </Text>
+      <Text></Text>
+      // <Text style={styles.developmentModeText}>
+      //   Development mode is enabled: your app will be slower but you can use
+      //   useful development tools. {learnMoreButton}
+      // </Text>
     );
   } else {
     return (
@@ -217,7 +225,7 @@ function handleHelpPress() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#3399ff',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -225,6 +233,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 19,
     textAlign: 'center',
+  },
+  badButton: {
+    marginBottom:20,
+    color: '#ff0066',
   },
   contentContainer: {
     paddingTop: 30,
