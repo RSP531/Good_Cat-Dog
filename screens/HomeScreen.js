@@ -8,11 +8,94 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Button,
 } from 'react-native';
+import FavoriteCats from './FavoriteCats.js'
 
 import { MonoText } from '../components/StyledText';
 
-export default function HomeScreen() {
+export default class HomeScreen extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      isLoading:true,
+      dataSource:null,
+      catArray:[],
+      favoriteArray:[],
+      value:0,
+    }
+    this.badCatButtonPress = this.badCatButtonPress.bind(this);
+    this.goodCatButtonPress = this.goodCatButtonPress.bind(this);
+  }
+  componentDidUpdate(prevState) {
+    if(prevState.dataSource !== this.state.dataSource){
+      //console.log('new')
+    }
+  }
+  componentDidMount() {
+    this.getNewCat()
+
+    this.getNewCatArray();
+    this.getNewCatArray();
+    this.getNewCatArray();
+    this.getNewCatArray();
+  }
+
+
+  getNewCatArray = () => {
+    return fetch('https://api.thecatapi.com/v1/images/search')
+    .then((response) => response.json())
+    .then((responseJson) => {
+      this.setState( state => {
+        const catArray = state.catArray.concat(responseJson[0].url)
+          return {
+            catArray,
+          }
+      })
+    })
+    .catch((error) => {
+      console.log(error)
+    });
+  }
+
+  getNewCat () {
+      fetch('https://api.thecatapi.com/v1/images/search')
+        .then((response) => response.json() )
+        .then((responseJson) => {
+          this.setState({
+            isLoading: false,
+            dataSource: responseJson[0].url
+          })
+        })
+      .catch((error) => {
+        console.log(error)
+      });
+  }
+
+  goodCatButtonPress(){
+    this.getNewCat()
+    this.addToFavorites()
+  }
+
+  badCatButtonPress(){
+    this.getNewCat()
+    //this.addToFavorites()
+  }
+
+  addToFavorites() {
+    const temp = this.state.catArray[0]
+    //console.log(temp)
+    const favArray = this.state.favoriteArray.concat(temp)
+    //console.log(favArray)
+    this.setState({
+      favoriteArray: favArray
+    })
+    // this.props.navigation.setParams({
+    //   favoritesArray: 'hi rob',
+    // })
+  }
+
+  render() {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -52,7 +135,22 @@ export default function HomeScreen() {
           </TouchableOpacity>
         </View>
 
-        <Text style={{fontSize:96}}>Scroll me plz</Text>
+        <Button 
+          style={{marginBottom:20}}
+          title='GOOD CAT'
+          onPress={()=>this.goodCatButtonPress()}
+        />
+          <Image 
+              style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
+              source = {{uri:`${this.state.dataSource}`}}
+          />
+        <Button 
+          style={{marginBottom:20}}
+          title='bad cat'
+          onPress={()=>this.badCatButtonPress()}
+        />
+
+        <Text style={{fontSize:96}}>GOOD CATZ</Text>
         <Text style={{fontSize:96}}>Scroll me plz</Text>
         <Text style={{fontSize:96}}>Scroll me plz</Text>
       </ScrollView>
@@ -71,6 +169,7 @@ export default function HomeScreen() {
       </View>
     </View>
   );
+}
 }
 
 HomeScreen.navigationOptions = {
