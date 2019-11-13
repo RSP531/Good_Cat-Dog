@@ -24,8 +24,7 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
     
 ## Tech stack
 
- <img src="./React_Native_logo.png" width="30%" height="30%">
- <img src="./Expo.jpeg" width="40%" height="40%">
+ <img src="./React_Native_logo.png" width="30%" height="30%"> <img src="./Expo.jpeg" width="40%" height="40%">
 
  * [TheCatAPI](https://thecatapi.com/)
  
