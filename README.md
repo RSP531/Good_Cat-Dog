@@ -1,4 +1,5 @@
-# Good Cat Bad Cat      &      Good Dog Bad Dog
+# Good Cat Bad Cat      
+#### & Good Dog Bad Dog
 
 <p align="center">
    <img src="./20191113-100729-480x986.gif">
@@ -37,7 +38,7 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
   
 ## Challenges that were unexpected
 
-    * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
+    * Managing state between tabs was difficult. In the future I would like to learn Redux to share state between tabs
     * I could not npm install anything. This was unexpected. In the future I would like to understand why Expo could not handle this
        * MongoAtlas
        * No Gesture Handlers
