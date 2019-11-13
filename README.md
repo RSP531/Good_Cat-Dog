@@ -4,7 +4,7 @@
 
 ![](20191113-100729-480x986.gif)
 
-## Who are the contributors (names should link to their github or portfolio page)
+## Contributors
 
 [Robert Peschke](https://github.com/RSP531)
 
@@ -27,6 +27,7 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
     
 ## Tech stack ( you can include logos)
  ![](React_Native_logo.png)
+ ![](Expo.jpeg)
 
  *[TheCatAPI](https://thecatapi.com/)
  
@@ -39,7 +40,7 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
   
 ## Challenges that were unexpected
 
-    * 2 days to create a "Minimum Viable Product Application"
+    * 2 days to create a "Minimum Viable Product (MVP) Application"
     * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
     *
   
