@@ -91,9 +91,7 @@ export default class HomeScreen extends React.Component {
     this.setState({
       favoriteArray: favArray
     })
-    // this.props.navigation.setParams({
-    //   favoritesArray: 'hi rob',
-    // })
+    
   }
 
   render() {
@@ -144,8 +142,8 @@ export default class HomeScreen extends React.Component {
         />
         
         <Image 
-            style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
-            source = {{uri:`${this.state.dataSource}`}}
+          style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
+          source = {{uri:`${this.state.dataSource}`}}
         />
 
         <Button 

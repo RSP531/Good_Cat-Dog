@@ -9,6 +9,7 @@ import {
   View,
   Button,
 } from 'react-native';
+import FavoriteDogs from './FavoriteDogs.js'
 import { ExpoLinksView } from '@expo/samples';
 import { MonoText } from '../components/StyledText';
 
@@ -22,12 +23,18 @@ export default class LinksScreen extends React.Component {
       favoriteArray:[],
       value:0,
     }
-    this.goodDogButtonPress = this.badDogButtonPress.bind(this);
+    this.badDogButtonPress = this.badDogButtonPress.bind(this);
     this.goodDogButtonPress = this.goodDogButtonPress.bind(this);
+    this.addToFavorites = this.addToFavorites.bind(this)
   }
 
   componentDidMount(){
     this.getNewDog()
+  }
+
+  componentDidUpdate(prevState) {
+    if(prevState.dataSource !== this.state.dataSource){
+    }
   }
 
   getNewDog () {
@@ -37,7 +44,7 @@ export default class LinksScreen extends React.Component {
         //console.log(responseJson)
         this.setState({
           isLoading: false,
-          dataSource: responseJson.message
+          dataSource: responseJson.message,
         })
       })
     .catch((error) => {
@@ -45,21 +52,36 @@ export default class LinksScreen extends React.Component {
     });
   }
   goodDogButtonPress(){
-
+    console.log('hi')
+    this.getNewDog()
+    this.addToFavorites()
+    console.log('heya')
   }
 
   badDogButtonPress(){
+    this.getNewDog()
+  }
 
+  addToFavorites() {
+    console.log('hi')
+    const temp = this.state.dataSource
+    console.log('TEMP:'+ temp)
+    const favArray = this.state.favoriteArray.concat(temp)
+    this.setState({
+      favoriteArray: favArray
+    })
+    
   }
 
   render(){
+    console.log(this.state.favoriteArray)
   return (
     <ScrollView style={styles.container}>
       <Button 
         color='#33cc33'
         style={{marginBottom:20}}
         title='GOOD DOG'
-        onPress={()=>this.goodCatButtonPress()}
+        onPress={()=>this.goodDogButtonPress()}
       />
         
       <Image 
@@ -69,9 +91,12 @@ export default class LinksScreen extends React.Component {
 
       <Button 
         color="#ff0000"
-        title='BAD DOG'
-        onPress={()=>this.badCatButtonPress()}
+        title='FETCH NEW DOG'
+        onPress={()=>this.badDogButtonPress()}
       />
+      <Text style={{fontSize:60}}>Favorites:</Text>
+      <FavoriteDogs favoriteDogs={this.state.favoriteArray}/>
+
     </ScrollView>
   );
 }
