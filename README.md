@@ -44,9 +44,9 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
     * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
     *
   
-## Video Demo / Screen shot walkthrough of the app 
+## Video Demo
 
-    * What were the user stories /  what was MVP (mention Minimal Viable Product)
+![](second.gif)
   
 ## How does the app work?
 
