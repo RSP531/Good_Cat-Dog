@@ -12,7 +12,8 @@
 
 An Android/iOS Application to sift through Cat & Dog images with the option of adding an image to the favorites list.
 
-- This React Native application was created in 2-days. React Native 
+- This React Native application was created in 2-days
+- React Native was learned over the course of the project
 
 ## What does the app do? 
 
