@@ -151,6 +151,7 @@ export default class HomeScreen extends React.Component {
         />
 
         <Text style={{fontSize:96}}>GOOD CATZ</Text>
+        <FavoriteCats favoriteCats={this.state.favoriteArray}/>
         <Text style={{fontSize:96}}>Scroll me plz</Text>
         <Text style={{fontSize:96}}>Scroll me plz</Text>
       </ScrollView>
