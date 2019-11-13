@@ -13,6 +13,7 @@ import {
 import FavoriteCats from './FavoriteCats.js'
 
 import { MonoText } from '../components/StyledText';
+import { red } from 'ansi-colors';
 
 export default class HomeScreen extends React.Component {
   constructor(props){
@@ -136,7 +137,7 @@ export default class HomeScreen extends React.Component {
             </Text>
           </TouchableOpacity>
         </View> */}
-        <View style={{marginRight:90, marginLeft:90, }}>
+        <View style={{marginRight:90, marginLeft:90, shadowColor:red, shadowOpacity:.75}}>
         <Button 
           color='#33cc33'
           title='GOOD CAT'
