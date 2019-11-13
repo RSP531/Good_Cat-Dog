@@ -2,7 +2,9 @@
 
 ## .gif of the application
 
-![](20191113-100729-480x986.gif)
+<p align="center">
+   <img src="./20191113-100729-480x986.gif">
+</p>
 
 ## Contributors
 
