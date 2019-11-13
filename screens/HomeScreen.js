@@ -31,6 +31,7 @@ export default class HomeScreen extends React.Component {
     if(prevState.dataSource !== this.state.dataSource){
     }
   }
+
   componentDidMount() {
     this.getNewCat()
 
@@ -136,6 +137,7 @@ export default class HomeScreen extends React.Component {
         </View> */}
 
         <Button 
+          color='#33cc33'
           style={{marginBottom:20}}
           title='GOOD CAT'
           onPress={()=>this.goodCatButtonPress()}
@@ -148,16 +150,9 @@ export default class HomeScreen extends React.Component {
 
         <Button 
           color="#ff0000"
-          // style={{color:"#1E6738"}}
           title='bad cat'
           onPress={()=>this.badCatButtonPress()}
         />
-        <TouchableOpacity
-          style={styles.loginScreenButton}
-          onPress={()=>this.goodCatButtonPress()}
-          underlayColor='#fff'>
-          <Text style={styles.loginText}>Hi Rob</Text>
-        </TouchableOpacity>
 
         <Text style={{fontSize:60}}>Favorites:</Text>
         <FavoriteCats favoriteCats={this.state.favoriteArray}/>
@@ -167,13 +162,13 @@ export default class HomeScreen extends React.Component {
 
       <View style={styles.tabBarInfoContainer}>
         <Text style={styles.tabBarInfoText}>
-          This is a tab bar. You can edit it in:
+          This app and its contents were made 
         </Text>
 
         <View
           style={[styles.codeHighlightContainer, styles.navigationFilename]}>
           <MonoText style={styles.codeHighlightText}>
-            navigation/MainTabNavigator.js
+            after 7pm on Tuesday
           </MonoText>
         </View>
       </View>
