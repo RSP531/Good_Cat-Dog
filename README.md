@@ -1,9 +1,8 @@
-# Good Cat Bad Cat & Good Dog Bad Dog
+# Good Cat Bad Cat      &      Good Dog Bad Dog
 
 <p align="center">
    <img src="./20191113-100729-480x986.gif">
 </p>
-
 ## Contributors
 
 [Robert Peschke](https://github.com/RSP531)
@@ -22,8 +21,8 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
     * Good Cats will be added to Favorites List and shown in the Scroll View
     * Bad Cats will be removed and a new image/gif will be generated
     
-## Tech stack ( you can include logos)
- ![](React_Native_logo.png)
+## Tech stack
+ ![#React Native](React_Native_logo.png)
  <img src="./Expo.jpeg" width="319" height="160">
 
  * [TheCatAPI](https://thecatapi.com/)
