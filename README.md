@@ -23,9 +23,9 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
     * Bad Cats will be removed and a new image/gif will be generated
     
 ## Tech stack
- ![#React Native](React_Native_logo.png)
- <img src="./React_Native_logo.png" width="20%" height="20%">
- <img src="./Expo.jpeg" width="40%" height="40%">
+
+ <img src="./React_Native_logo.png" width="30%" height="30%">
+ <img src="./Expo.jpeg" width="20%" height="20%">
 
  * [TheCatAPI](https://thecatapi.com/)
  
