@@ -52,10 +52,10 @@ export default class LinksScreen extends React.Component {
     });
   }
   goodDogButtonPress(){
-    console.log('hi')
+    //console.log('hi')
     this.getNewDog()
     this.addToFavorites()
-    console.log('heya')
+    //console.log('heya')
   }
 
   badDogButtonPress(){
@@ -63,9 +63,9 @@ export default class LinksScreen extends React.Component {
   }
 
   addToFavorites() {
-    console.log('hi')
+    //console.log('hi')
     const temp = this.state.dataSource
-    console.log('TEMP:'+ temp)
+    //console.log('TEMP:'+ temp)
     const favArray = this.state.favoriteArray.concat(temp)
     this.setState({
       favoriteArray: favArray
@@ -74,9 +74,13 @@ export default class LinksScreen extends React.Component {
   }
 
   render(){
-    console.log(this.state.favoriteArray)
+    //console.log(this.state.favoriteArray)
   return (
     <ScrollView style={styles.container}>
+      <Text style={styles.getStartedText}>
+        Click to Rate a Doggo
+      </Text>
+
       <Button 
         color='#33cc33'
         style={{marginBottom:20}}
@@ -111,5 +115,11 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 15,
     backgroundColor: '#ffffcc',
+  },
+  getStartedText: {
+    fontSize: 17,
+    color: 'rgb(0, 0, 102)',
+    lineHeight: 24,
+    textAlign: 'center',
   },
 });

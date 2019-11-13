@@ -100,6 +100,9 @@ export default class HomeScreen extends React.Component {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
+        <Text style={styles.getStartedText}>
+          Click to Rate a Cat
+        </Text>
         {/* <View style={styles.welcomeContainer}>
           <Image
             source={
@@ -152,7 +155,7 @@ export default class HomeScreen extends React.Component {
           onPress={()=>this.badCatButtonPress()}
         />
 
-        <Text style={{fontSize:60}}>Favorites:</Text>
+        <Text style={{fontSize:60}}>Saved Catz:</Text>
         <FavoriteCats favoriteCats={this.state.favoriteArray}/>
         <Text style={{fontSize:60}}>Good Catz</Text>
         <Text style={{fontSize:60}}>Good Catz</Text>
@@ -263,7 +266,7 @@ const styles = StyleSheet.create({
   },
   getStartedText: {
     fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    color: 'rgb(0, 0, 102)',
     lineHeight: 24,
     textAlign: 'center',
   },
