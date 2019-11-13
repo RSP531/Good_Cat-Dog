@@ -10,12 +10,9 @@
 
 ## Introduction
 
-An Android/iOS Application to sift through Cat & Dog images and rate them as good or bad. This Ractive Native application was created in 2-days. React Native was learned during the process.
+An Android/iOS Application to sift through Cat & Dog images with the option of adding an image to the favorites list.
 
-This project was a brief 1-week sprint where our team tried to complete an MVP for an external user **(Jane Doe)**
-
- - Add any additional content here pertaining to timeline, any personal goals, etc
- 
+- This React Native application was created in 2-days. React Native 
 
 ## What does the app do? 
 
@@ -23,61 +20,40 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
     * User can select if Cat is Good or Bad
     * Good Cats will be added to Favorites List and shown in the Scroll View
     * Bad Cats will be removed and a new image/gif will be generated
-    * Similar 
     
 ## Tech stack ( you can include logos)
  ![](React_Native_logo.png)
  <img src="./Expo.jpeg" width="319" height="160">
 
- *[TheCatAPI](https://thecatapi.com/)
+ * [TheCatAPI](https://thecatapi.com/)
  
- *[DogAPI](https://dog.ceo/dog-api/)
+ * [DogAPI](https://dog.ceo/dog-api/)
 
 ## Technical Challenges and research that you anticipated
 
-    * Two Api's were used 
-    * What did you learn?
+    * Postman was used to test GET requests from the two API's
   
 ## Challenges that were unexpected
 
     * 2 days to create a "Minimum Viable Product (MVP) Application"
     * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
-    *
+    * I could not npm install anything. This was unexpected. In the future I would like to understand why Expo could not handle this
+       * MongoAtlas
+       * No Gesture Handlers
   
 ## Video Demo
 
 ![](second.gif)
   
-## How does the app work?
+## How does the app work (behind the scenes)?
 
-    * What happens behind the scenes when the user interacts with it? 
-    * OR What are all the place the data travels?  What happens to that data?
-    * Optionally include a diagram
-    * How does the tech stack come together?
+    * Images are generated from two separate API's
+    * "Good" images are stored in an array and rendered in the ScrollView
 
 ## What research was required?
 
-## Workflow and Key lessons from your team - specifically those related to: Agile, CI/CD, testing, working with external stakeholders, ticketing, and user stories.
+## Future features to be implemented
 
-    * Your git workflow, style guides, commit guides, etc
-    * What did you learn from the process
-    * What were key takeaways from stand ups, code reviews, etc
-    * Writing tests
-    * Link to your trello board, discuss completed tickets
-
-## Any non-MVP tickets (optional)
-
- - Code refactorings
- - Performance Optimizations
- - Additional features
- - etc
-
-## Notes from your Sprint Retro
-
-
-
-## What additional features do you plan to add, how do you plan to implement those features?
-
-    * Future refactoring?
+    * Gesture handling Swipe Features 
     * Additional dev ops considerations?
     * UI/UX additions?
