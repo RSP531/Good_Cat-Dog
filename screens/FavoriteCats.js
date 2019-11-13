@@ -22,11 +22,13 @@ export default class FavoriteCats extends React.Component {
   render() {
     return (
       <View>
-        <Text> HI </Text>
-        <Image 
-              style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
-              source = {{uri:`${this.props.favoriteCats[0]}`}}
-          />
+        {this.props.favoriteCats.map((image)=> (
+          <Image 
+                key={image}
+                style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
+                source={{uri:`${image}`}}
+            />
+        ))}
       </View>
     )
   }

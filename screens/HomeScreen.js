@@ -83,9 +83,10 @@ export default class HomeScreen extends React.Component {
   }
 
   addToFavorites() {
-    const temp = this.state.catArray[0]
+    // const temp = this.state.catArray[0]
+    const temp2 = this.state.dataSource
     //console.log(temp)
-    const favArray = this.state.favoriteArray.concat(temp)
+    const favArray = this.state.favoriteArray.concat(temp2)
     //console.log(favArray)
     this.setState({
       favoriteArray: favArray
@@ -140,20 +141,22 @@ export default class HomeScreen extends React.Component {
           title='GOOD CAT'
           onPress={()=>this.goodCatButtonPress()}
         />
-          <Image 
-              style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
-              source = {{uri:`${this.state.dataSource}`}}
-          />
+        
+        <Image 
+            style={{width: 300, height: 300, alignItems:'center',marginHorizontal: 30, marginBottom:20, marginTop:20}}
+            source = {{uri:`${this.state.dataSource}`}}
+        />
+
         <Button 
           style={{marginBottom:20}}
           title='bad cat'
           onPress={()=>this.badCatButtonPress()}
         />
 
-        <Text style={{fontSize:96}}>GOOD CATZ</Text>
+        <Text style={{fontSize:60}}>Favorites:</Text>
         <FavoriteCats favoriteCats={this.state.favoriteArray}/>
-        <Text style={{fontSize:96}}>Scroll me plz</Text>
-        <Text style={{fontSize:96}}>Scroll me plz</Text>
+        <Text style={{fontSize:60}}>Good Catz</Text>
+        <Text style={{fontSize:60}}>Good Catz</Text>
       </ScrollView>
 
       <View style={styles.tabBarInfoContainer}>
