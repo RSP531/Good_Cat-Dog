@@ -1,21 +1,35 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { 
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Button,
+} from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
+import { MonoText } from '../components/StyledText';
 
-export default function LinksScreen() {
+export default class LinksScreen extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render(){
   return (
     <ScrollView style={styles.container}>
-      {/**
-       * Go ahead and delete ExpoLinksView and replace it with your content;
-       * we just wanted to provide you with some helpful links.
-       */}
-      <ExpoLinksView />
+      {/* <ExpoLinksView /> */}
     </ScrollView>
   );
 }
+}
 
 LinksScreen.navigationOptions = {
-  title: 'Links',
+  title: 'GOOD dog BAD dog',
 };
 
 const styles = StyleSheet.create({

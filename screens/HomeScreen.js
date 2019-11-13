@@ -29,7 +29,6 @@ export default class HomeScreen extends React.Component {
   }
   componentDidUpdate(prevState) {
     if(prevState.dataSource !== this.state.dataSource){
-      //console.log('new')
     }
   }
   componentDidMount() {
@@ -177,7 +176,7 @@ export default class HomeScreen extends React.Component {
 }
 
 HomeScreen.navigationOptions = {
-  header: null,
+  title: 'GOOD cat BAD cat',
 };
 
 function DevelopmentModeNotice() {
