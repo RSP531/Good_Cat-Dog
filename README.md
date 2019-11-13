@@ -1,45 +1,47 @@
-hi
+# Good Cat Bad Cat & Good Dog Bad Dog
+
+## .gif of the application
 
 ![](20191113-100729-480x986.gif)
-![](React_Native_logo.png)
-
-
-# Readme.md template (est time: 4+ hours)
-
-An extremely important part of your Blue Ocean project is the readme.md that accompanies your code repository.
-
-It is recommended that you *start* the readme.md during the sprint, and complete it afterwards.
-
-You should replace the existing readme.md in your repo with the following information:
-
-## Catchy headline / cool graphic
 
 ## Who are the contributors (names should link to their github or portfolio page)
 
+[Robert Peschke](https://github.com/RSP531)
+
 ## Introduction
+
+An Android/iOS Application to sift through Cat & Dog images and rate them as good or bad. This Ractive Native application was created in 2-days. React Native was learned during the process.
 
 This project was a brief 1-week sprint where our team tried to complete an MVP for an external user **(Jane Doe)**
 
  - Add any additional content here pertaining to timeline, any personal goals, etc
-
+ 
 
 ## What does the app do? 
 
-    * What problem does it solve? Who uses it?
-    * Why was it built?
-    * User Inputs and Outputs
-    * 
+    * App shows a list of Cat images & gifs
+    * User can select if Cat is Good or Bad
+    * Good Cats will be added to Favorites List and shown in the Scroll View
+    * Bad Cats will be removed and a new image/gif will be generated
+    * Similar 
+    
 ## Tech stack ( you can include logos)
+ ![](React_Native_logo.png)
+
+ *[TheCatAPI](https://thecatapi.com/)
+ 
+ *[DogAPI](https://dog.ceo/dog-api/)
 
 ## Technical Challenges and research that you anticipated
 
-    * Why, what was the plan to overcome those challenges?
+    * Two Api's were used 
     * What did you learn?
   
 ## Challenges that were unexpected
 
-    * Why was it a challenge
-    * What did you learn?
+    * 2 days to create a "Minimum Viable Product Application"
+    * Managing state was difficult between tabs. In the future I would like to learn Redux to manage state between tabs
+    *
   
 ## Video Demo / Screen shot walkthrough of the app 
 
