@@ -27,7 +27,7 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
     
 ## Tech stack ( you can include logos)
  ![](React_Native_logo.png)
- ![](Expo.jpeg)
+ <img src="./Expo.jpeg" width="319" height="160">
 
  *[TheCatAPI](https://thecatapi.com/)
  
