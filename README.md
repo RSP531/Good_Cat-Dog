@@ -1,7 +1,5 @@
 # Good Cat Bad Cat & Good Dog Bad Dog
 
-## .gif of the application
-
 <p align="center">
    <img src="./20191113-100729-480x986.gif">
 </p>
