@@ -50,10 +50,6 @@ An Android/iOS Application to sift through Cat & Dog images with the option of a
     * Images are generated from two separate API's
     * "Good" images are stored in an array and rendered in the ScrollView
 
-## What research was required?
-
 ## Future features to be implemented
 
     * Gesture handling Swipe Features 
-    * Additional dev ops considerations?
-    * UI/UX additions?
