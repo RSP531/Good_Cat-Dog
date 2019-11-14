@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FifthTry",
-    "slug": "fifthTry",
+    "name": "GoodCatBadCat",
+    "slug": "goodcatbadcat",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -13,7 +13,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splash1.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,6 +25,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Rate some catz & doggos"
   }
 }
